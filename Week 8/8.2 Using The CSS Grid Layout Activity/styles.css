@@ -1,0 +1,53 @@
+body {
+ margin: 40px;
+}
+
+.sidebar { grid-column: 1/2;
+ grid-row: 2/3;
+ /* TODO: Define the grid area here */
+}
+
+.content {grid-column: 2/4;
+ grid-row: 2/3;
+ /* TODO: Define the grid area here */
+}
+
+.header {
+ grid-column: 2/4;
+ /* TODO: Define the grid area here */
+}
+
+
+.footer {
+ grid-column: 1/4;
+ grid-row: 3/4;
+ /* TODO: Define the grid area here */
+}
+
+.wrapper {
+ display: grid;
+ grid-gap: 10px;
+ background-color: #fff;
+ color: #444;
+
+ /* TODO: Define the grid-template-columns and grid-template-areas values here. */
+ grid-template-columns: 120px 120px 120px;
+ grid-template-areas:
+   '....... header header'
+   'sidebar content content'
+   'footer  footer  footer';
+}
+
+.box {
+ background-color: #0000ff;
+ color: #fff;
+ border-radius: 5px;
+ padding: 10px;
+ font-size: 150%;
+}
+
+.header,
+.footer {
+ background-color: #999;
+}
+
